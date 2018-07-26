@@ -21,7 +21,7 @@ params:
   version: master
 
   home: /var/www/discourse
-  upload_size: 10m
+  upload_size: 16m
 
 run:
   - exec: /usr/local/bin/ruby -e 'if ENV["DISCOURSE_SMTP_ADDRESS"] == "smtp.example.com"; puts "Aborting! Mail is not configured!"; exit 1; end'
